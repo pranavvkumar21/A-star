@@ -93,7 +93,7 @@ def create_obstruction():
             grid_map[elem].change_color("b0")
     update()
 
-def reconstruct_path(current,start,goal):
+def reconstruct_path(current,starts):
     #start = int(str(start[0])+str(start[1]))
     #goal = int(str(goal[0])+str(goal[1]))
     path  = [current]
