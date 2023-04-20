@@ -4,10 +4,10 @@ import numpy as np
 import time
 import random
 
-X=120
-Y=120
-start = (3,110)
-goal = (110,8)
+X=30
+Y=30
+start = (3,27)
+goal = (27,3)
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
@@ -93,7 +93,7 @@ def create_obstruction():
             grid_map[elem].change_color("b0")
     update()
 
-def reconstruct_path(current,starts):
+def reconstruct_path(current,start,goal):
     #start = int(str(start[0])+str(start[1]))
     #goal = int(str(goal[0])+str(goal[1]))
     path  = [current]
